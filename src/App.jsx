@@ -1,9 +1,25 @@
-import  { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from  './firebase'; // Importe a instância do Firebase já configurada
 
 function ListaContatos() {
   const [contatos, setContatos] = useState([]);
   const [nome, setNome] = useState('');
   const [numero, setNumero] = useState('');
+
+  useEffect(() => {
+    const fetchContatos = async () => {
+      const querySnapshot = await getDocs(collection(db, 'userphone'));
+      const contatosData = [];
+      querySnapshot.forEach((doc) => {
+        const { name, number } = doc.data();
+        contatosData.push({ nome: name, numero: number });
+      });
+      setContatos(contatosData);
+    };
+
+    fetchContatos();
+  }, []);
 
   const adicionarContato = () => {
     if (nome !== '' && numero !== '') {
