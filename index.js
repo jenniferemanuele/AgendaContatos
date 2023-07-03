@@ -55,7 +55,7 @@ function adicionarContato() {
             exibirDialogEdicao(nome, telefone, listaContatos, contatoEditado);
         };
         contatoEditado.appendChild(editarLink);
-
+        
         editingContactIndex = -1;
     }
 
