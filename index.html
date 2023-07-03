@@ -4,6 +4,7 @@
     <title>Agenda de Contatos</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <script src="index.js"></script>
 </head>
 <body>
@@ -12,13 +13,14 @@
         <h1>Adicionar Contatos</h1>
         <input class="inputregistro" type="text" id="nome" placeholder="Nome">
         <input class="inputregistro" type="text" id="telefone" placeholder="Telefone">
-        <button onclick="adicionarContato()">Adicionar</button>
-
-       
+        <button onclick="adicionarContato()">Adicionar</button>       
     </div>
+
     <div class= "container2">
-        <input class = "inputpesquisa"type="text" id="pesquisa" placeholder="Pesquisar por nome" onkeyup="pesquisarContatos()">
-        <ul id="lista-contatos"></ul>   
+        <input class = "inputpesquisa"type="text" id="pesquisa" placeholder="Pesquisar por nome"
+        onkeyup="pesquisarContatos()">
+        <ul id="lista-contatos"></ul>  
+        <img src="search.png" alt=""> 
     </div>
     <div id="edit-dialog" class="edit-dialog">
         <div class="edit-dialog-content">
@@ -29,7 +31,6 @@
             <button onclick="fecharDialogEdicao()">Cancelar</button>
         </div>
     </div>
-    
 
 </body>
 </html>
