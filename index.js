@@ -176,4 +176,4 @@ function pesquisarContatos() {
       contato.style.display = "none"; 
     } 
   }); 
-} 
+}
