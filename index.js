@@ -29,7 +29,8 @@ function adicionarContato() {
  
     const editarLink = document.createElement("a"); 
     editarLink.href = "#"; 
-    editarLink.innerText = "Editar"; 
+    editarLink.innerText = " Editar"; 
+    editarLink.className = "edit-button"
     editarLink.onclick = function () { 
       exibirDialogEdicao(nome, telefone, listaContatos, novoContato); 
     }; 
@@ -52,7 +53,8 @@ function adicionarContato() {
  
     const editarLink = document.createElement("a"); 
     editarLink.href = "#"; 
-    editarLink.innerText = "Editar"; 
+    editarLink.innerText = " Editar"; 
+    editarLink.className = "edit-button";
     editarLink.onclick = function () { 
       exibirDialogEdicao(nome, telefone, listaContatos, contatoEditado); 
     }; 
@@ -117,7 +119,8 @@ function salvarEdicao() {
  
   const editarLink = document.createElement("a"); 
   editarLink.href = "#"; 
-  editarLink.innerText = "Editar"; 
+  editarLink.innerText = " Editar"; 
+  editarLink.className= "edit-button"
   editarLink.onclick = function () { 
     exibirDialogEdicao(novoNome, novoTelefone, listaContatos,
 contatoEditado); 

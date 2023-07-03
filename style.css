@@ -141,3 +141,9 @@ h2 {
     margin-left: 10px;
     cursor: pointer;
 }
+
+.edit-button {
+    color: rgb(3, 43, 61);
+    margin-left: 10px;
+    cursor: pointer;
+}
