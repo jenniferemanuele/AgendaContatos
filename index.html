@@ -11,7 +11,17 @@
         <input class="inputnome" type="text" id="nome" placeholder="Nome">
         <input type="text" id="telefone" placeholder="Telefone">
         <button onclick="adicionarContato()">Adicionar</button>
+        <input type="text" id="pesquisa" placeholder="Pesquisar por nome" onkeyup="pesquisarContatos()">
         <ul id="lista-contatos"></ul>
+    </div>
+    <div id="edit-dialog" class="edit-dialog">
+        <div class="edit-dialog-content">
+            <h2>Editar Contato</h2>
+            <input type="text" id="edit-nome" placeholder="Nome">
+            <input type="text" id="edit-telefone" placeholder="Telefone">
+            <button onclick="salvarEdicao()">Salvar</button>
+            <button onclick="fecharDialogEdicao()">Cancelar</button>
+        </div>
     </div>
 </body>
 </html>
