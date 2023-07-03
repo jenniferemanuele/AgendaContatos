@@ -14,7 +14,7 @@ function adicionarContato() {
     const regexNumeroTelefone = /^\(\d{2}\) \d{5}-\d{4}$/;
 
     if (regexNumeroTelefone.test(telefone) === false) {
-        alert('Por favor, insira um número de telefone válido no formato (XX) XXXXX-XXXX.');
+        alert('Por favor, insira um número de telefone válido no formato (XX) XXXXX-XXXX');
         return;
     }
 
